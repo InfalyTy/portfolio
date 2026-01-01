@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>InfalyTy | Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0b0f1a, #05070d);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #4fc3ff;
+      text-decoration: none;
+    }
+
+    /* ===== NAV ===== */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2.5rem;
+      border-bottom: 1px solid #1c2340;
+      background: rgba(5, 7, 13, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #4fc3ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      opacity: 0.8;
+      transition: opacity .2s;
+    }
+
+    nav ul li a:hover {
+      opacity: 1;
+    }
+
+    /* ===== HERO ===== */
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 5rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .hero span {
+      color: #4fc3ff;
+    }
+
+    .hero p {
+      margin-top: 1.5rem;
+      max-width: 700px;
+      margin-inline: auto;
+      opacity: 0.85;
+    }
+
+    .buttons {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.9rem 1.8rem;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid #4fc3ff;
+      transition: transform .2s, background .2s;
+    }
+
+    .btn.primary {
+      background: #4fc3ff;
+      color: #05070d;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: #4fc3ff;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ===== SECTIONS ===== */
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      color: #4fc3ff;
+    }
+
+    /* ===== ABOUT ===== */
+
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      opacity: 0.85;
+    }
+
+    /* ===== SKILLS ===== */
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill {
+      background: #0e1324;
+      border: 1px solid #1c2340;
+      padding: 1.5rem;
+      border-radius: 14px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* ===== PROJECTS ===== */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: #0e1324;
+      border: 1px solid #1c2340;
+      padding: 2rem;
+      border-radius: 16px;
+      transition: transform .2s, border .2s;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      border-color: #4fc3ff;
+    }
+
+    .project h4 {
+      margin-bottom: 0.8rem;
+      color: #4fc3ff;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    /* ===== CONTACT ===== */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      opacity: 0.85;
+    }
+
+    /* ===== FOOTER ===== */
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #1c2340;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <h1>InfalyTy</h1>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header className="hero" class="hero">
+    <h2>Hola, soy <span>InfalyTy</span></h2>
+    <p>
+      Desarrollador enfocado en crear experiencias modernas, eficientes y escalables,
+      con especial interés en proyectos web, juegos y sistemas.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#projects">Ver proyectos</a>
+      <a class="btn secondary" href="#contact">Contactar</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h3>Sobre mí</h3>
+    <p>
+      Soy un developer apasionado por la tecnología, la programación y la creación
+      de soluciones digitales. Me gusta trabajar tanto en frontend como backend,
+      aprender nuevas herramientas y mejorar continuamente mis proyectos.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h3>Habilidades</h3>
+    <div class="skills">
+      <div class="skill">HTML / CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Minecraft Plugins</div>
+      <div class="skill">APIs & Backend</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h3>Proyectos</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>DashMC Network</h4>
+        <p>Servidor Minecraft con sistemas personalizados, web propia y automatización.</p>
+      </div>
+      <div class="project">
+        <h4>Webs y Landing Pages</h4>
+        <p>Diseño y desarrollo de páginas modernas enfocadas en rendimiento y UX.</p>
+      </div>
+      <div class="project">
+        <h4>Herramientas & Scripts</h4>
+        <p>Scripts y soluciones personalizadas para comunidades y proyectos online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h3>Contacto</h3>
+    <p>
+      ¿Quieres trabajar conmigo o tienes un proyecto en mente?<br>
+      Escríbeme y hablamos.
+    </p>
+    <p style="margin-top:1rem;">
+      <strong>Email:</strong> tuemail@ejemplo.com<br>
+      <strong>Discord:</strong> InfalyTy
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 InfalyTy — All rights reserved
+  </footer>
+
+</body>
+</html>
